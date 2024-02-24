@@ -1,0 +1,33 @@
+﻿<Window x:Class="RestoranProjekat.Forme.FrmJelo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestoranProjekat.Forme"
+        mc:Ignorable="d"
+        Title="FrmJelo" Height="500 " Width="480">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" TileMode="FlipXY" ImageSource="/Forme/pozadina1.jpg"/>
+        </Grid.Background>
+        <Label x:Name="lblKuvar" Content="Kuvar : " HorizontalAlignment="Left" Margin="125,55,0,0" VerticalAlignment="Top" FontWeight="Regular" FontStyle="Normal" FontFamily="Monotype Corsiva" FontSize="18"/>
+        <Label x:Name="lblMeni" Content="Meni : " HorizontalAlignment="Left" Margin="125,110,0,0" VerticalAlignment="Top" FontWeight="Regular" FontStyle="Normal" FontFamily="Monotype Corsiva" FontSize="18"/>
+        <Label x:Name="lblNaziv" Content="Naziv : " HorizontalAlignment="Left" Margin="125,165,0,0" VerticalAlignment="Top" FontWeight="Regular" FontStyle="Normal" FontFamily="Monotype Corsiva" FontSize="18"/>
+        <Label x:Name="lblVrsta" Content="Vrsta : " HorizontalAlignment="Left" Margin="125,220,0,0" VerticalAlignment="Top" FontWeight="Regular" FontStyle="Normal" FontFamily="Monotype Corsiva" FontSize="18"/>
+        <Label x:Name="lblVeg" Content="Vegetarijansko :" HorizontalAlignment="Left" Margin="125,275,0,0" VerticalAlignment="Top" FontWeight="Regular" FontStyle="Normal" FontFamily="Monotype Corsiva" FontSize="18"/>
+        <Label x:Name="lblCena" Content="Cena : " HorizontalAlignment="Left" Margin="125,330,0,0" VerticalAlignment="Top" FontWeight="Regular" FontStyle="Normal" FontFamily="Monotype Corsiva" FontSize="18"/>
+        <ComboBox x:Name="cmbKuvar" HorizontalAlignment="Left" Margin="224,59,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cmbMeni" HorizontalAlignment="Left" Margin="224,114,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNaziv" HorizontalAlignment="Left" Margin="224,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="White"/>
+        <TextBox x:Name="txtVrsta" HorizontalAlignment="Left" Margin="224,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="White"/>
+        <CheckBox x:Name="cbVegetarijansko" Content="" HorizontalAlignment="Left" Margin="273,283,0,0" VerticalAlignment="Top" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"/>
+        <TextBox x:Name="txtCena" HorizontalAlignment="Left" Margin="224,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="White"/>
+        <Button x:Name="btnDodaj" Content="Add" HorizontalAlignment="Left" Margin="150,440,0,0" VerticalAlignment="Top" Width="80" ScrollViewer.CanContentScroll="True">
+            <Button.Style>
+                <Style/>
+            </Button.Style>
+        </Button>
+        <Button x:Name="btnIzadji" Content="Cancel" HorizontalAlignment="Left" Margin="250,440,0,0" VerticalAlignment="Top" Width="80"/>
+
+    </Grid>
+</Window>

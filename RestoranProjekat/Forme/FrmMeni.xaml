@@ -1,0 +1,29 @@
+﻿<Window x:Class="RestoranProjekat.Forme.FrmMeni"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestoranProjekat.Forme"
+        mc:Ignorable="d"
+        Title="FrmMeni" Height="375" Width="480">
+    <Grid HorizontalAlignment="Center" Width="480">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill"  ImageSource="pozadina1.jpg"/>
+        </Grid.Background>
+        <Label x:Name="lblAlergeni" Content="Alergeni : " HorizontalAlignment="Left" Margin="125,114,0,0" VerticalAlignment="Top" FontWeight="Regular" FontStyle="Normal" FontFamily="Monotype Corsiva" FontSize="18" Grid.Row="1" Height="30" Width="71"/>
+        <Label x:Name="lblVrsta" Content="Vrsta kuhinje : " HorizontalAlignment="Left" Margin="125,169,0,0" VerticalAlignment="Top" FontWeight="Regular" FontStyle="Normal" FontFamily="Monotype Corsiva" FontSize="18" Grid.Row="1" Height="30" Width="105"/>
+        <TextBox x:Name="txtAlergeni" HorizontalAlignment="Left" Margin="224,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="White" Grid.Row="1" Height="18" />
+        <TextBox x:Name="txtVrsta" HorizontalAlignment="Left" Margin="240,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" Background="White" Grid.Row="1" Height="18"/>
+        <Button x:Name="btnDodaj" Content="Add" HorizontalAlignment="Left" Margin="150,300,0,0" VerticalAlignment="Top" Width="80" ScrollViewer.CanContentScroll="True" Grid.Row="1" Height="20">
+            <Button.Style>
+                <Style/>
+            </Button.Style>
+        </Button>
+        <Button x:Name="btnIzadji" Content="Cancel" HorizontalAlignment="Left" Margin="250,300,0,0" VerticalAlignment="Top" Width="80" Grid.Row="1" Height="20" />
+
+    </Grid>
+</Window>

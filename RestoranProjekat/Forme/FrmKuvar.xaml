@@ -1,0 +1,31 @@
+﻿<Window x:Class="RestoranProjekat.Forme.FrmKuvar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestoranProjekat.Forme"
+        mc:Ignorable="d"
+        Title="FrmKuvar"  Height="375" Width="480">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill"  ImageSource="/Forme/pozadina1.jpg"/>
+        </Grid.Background>
+        <Label x:Name="lblPoslasticar" Content="Poslastičar : " HorizontalAlignment="Left" Margin="125,59,0,0" VerticalAlignment="Top" FontWeight="Regular" FontStyle="Normal" FontFamily="Monotype Corsiva" FontSize="18" Grid.Row="1" Height="30" Width="142"/>
+        <Label x:Name="lblIme" Content="Ime : " HorizontalAlignment="Left" Margin="125,114,0,0" VerticalAlignment="Top" FontWeight="Regular" FontStyle="Normal" FontFamily="Monotype Corsiva" FontSize="18" Grid.Row="1" Height="30" Width="63"/>
+        <Label x:Name="lblPrezime" Content="Prezime : " HorizontalAlignment="Left" Margin="125,169,0,0" VerticalAlignment="Top" FontWeight="Regular" FontStyle="Normal" FontFamily="Monotype Corsiva" FontSize="18" Grid.Row="1" Height="30" Width="86"/>
+        <TextBox x:Name="txtIme" HorizontalAlignment="Left" Margin="224,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="White" Grid.Row="1" Height="18"/>
+        <TextBox x:Name="txtPrezime" HorizontalAlignment="Left" Margin="224,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="White" Grid.Row="1" Height="18"/>
+        <Button x:Name="btnDodaj" Content="Add" HorizontalAlignment="Left" Margin="150,300,0,0" VerticalAlignment="Top" Width="80" ScrollViewer.CanContentScroll="True" Grid.Row="1" Height="20">
+            <Button.Style>
+                <Style/>
+            </Button.Style>
+        </Button>
+        <Button x:Name="btnIzadji" Content="Cancel" HorizontalAlignment="Left" Margin="250,300,0,0" VerticalAlignment="Top" Width="80" Grid.Row="1" Height="20"/>
+        <CheckBox x:Name="cmbPoslasticar" Content="" HorizontalAlignment="Left" Margin="275,66,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="18"/>
+
+    </Grid>
+</Window>
